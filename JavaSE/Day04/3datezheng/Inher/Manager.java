@@ -1,3 +1,5 @@
+//2014年12月5
+
 public class Manager extends Employee{
 	//特有属性
 	String car;

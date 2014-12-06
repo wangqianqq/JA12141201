@@ -21,6 +21,15 @@ public class Person{
 
 	public static void main(String[] args){
 		Person per = new Person();
-		per.sleep("床上");
-	}
+		//per.sleep("床上");
+		int age = per.getAge(18);
+		System.out.println(age);
+}
+/* 
+有参有返回
+ */
+ public int getAge(int a){
+	return a;
+ }
+	
 }

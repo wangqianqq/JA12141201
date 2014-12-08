@@ -7,6 +7,7 @@ public class DemoA{
 	PackDemo pd=new PackDemo(); //¼òÐ´
 	//gem.java.PackDemo pd;//È«³Æ
 	
+	
 	public static void main(String[] args){
 		PackDemo pd=new PackDemo();
 		pd.a=123;

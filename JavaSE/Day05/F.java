@@ -5,6 +5,8 @@ class Cat{
 		return "我的姓名:" +name+ "我的年龄:" +age;
 	}
 }
+
+
 public class F{
 	public static void main(String[] args){
 		//String name=new String("你好");

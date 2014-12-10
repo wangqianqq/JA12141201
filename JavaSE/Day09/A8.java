@@ -1,3 +1,4 @@
+//Êı×éÃ°ÅİÅÅĞò
 public class A8{
 	public static void main(String[] args){
 		int[] arr={34,87,21,45,64,43,78};

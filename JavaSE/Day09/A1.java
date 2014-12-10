@@ -1,3 +1,4 @@
+//数组求最大值
 import java.util.Scanner;
 public class A1{
 	public static void main(String[] args){

@@ -1,3 +1,4 @@
+//数组查找算法
 import java.util.Scanner;
 public class A6{
 	public static void main(String[] args){

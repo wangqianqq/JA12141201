@@ -1,3 +1,5 @@
+
+//数组复制算法
 public class A5{
 	public static void main(String[] args){
 		int[] arrA={1,2,3,4,5};

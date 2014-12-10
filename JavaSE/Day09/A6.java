@@ -7,7 +7,7 @@ public class A6{
 		String[] arr={"张三", "李四" ,"王二" ,"麻子" ,"张三","wq"};
 		boolean flag=false;
 		for(int i=0;i<arr.length;i++){
-			if(name.equals(arr[i])){
+			if(name.equals(arr[i])){//判断输入的name和下标为i的数组里面的名字是不是一样
 				flag=true;
 				break;
 			}	

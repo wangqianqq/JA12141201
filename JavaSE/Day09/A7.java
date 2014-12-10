@@ -1,3 +1,4 @@
+
 //数组插入算法
 import java.util.Scanner;
 public class A7{

@@ -19,7 +19,7 @@ class Outer{
 			//不能访问局部变量local_var,局部常量
 			System.out.println("内部类:成员方法"+num);
 			System.out.println(a + "\t"+ str);
-			System.out.println(Outer.this.str);
+			System.out.println(Outer.this.str);//外部类 成员变量
 			}
 		}
 	

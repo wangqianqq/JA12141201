@@ -13,7 +13,7 @@ public class ListDemo {
 		 * 相对Collection::特有方法：带索引index的方法
 		 * */
 		
-		List list = new ArrayList<>();
+		List list = new ArrayList();
 		
 		//1、增操作
 		list.add("android-001");
@@ -29,7 +29,11 @@ public class ListDemo {
 //			System.out.println(list.get(i));
 //		}
 		
-		System.out.println("----------");
+		//list中，使用元素的equals方法判断与元素是否相同
+		System.out.println(list);
+		
+		System.out.println("-------");
+
 		//2、删除操作
 		try{
 			System.out.println(list.remove(10));

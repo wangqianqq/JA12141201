@@ -24,7 +24,8 @@ public class TreeSetDemo {
 		ts.add("apple");
 		ts.add("zxa");
 		ts.add("hello");
-
+		
+		//向Treeset添加的元素应该是同一种类型
 		
 
 		for (Iterator it = ts.iterator(); it.hasNext();) {

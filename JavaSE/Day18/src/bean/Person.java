@@ -61,7 +61,7 @@ public class Person implements Comparable{
 		return true;
 	}
 
-	public int compareTo(Object o){
+	public int compareTo(Object o){//复写compareTo方法
 		Person p=(Person)o;
 		//1、先年龄比较、在比较名字
 	//	int res =this.age-p.age;
@@ -70,7 +70,7 @@ public class Person implements Comparable{
 //		}else{
 //		return res;
 //		}
-		
+		//简写
 		//return res==0?(this.name.compareTo(p.name)>0?1:-1):res;
 		
 		//2、先名字比较、在比较年龄
@@ -80,7 +80,7 @@ public class Person implements Comparable{
 //		}else{
 //			return res;
 //		}
-		
+		//简写
 		return res==0?this.age-p.age>0?1:-1:res;
 	}
 	

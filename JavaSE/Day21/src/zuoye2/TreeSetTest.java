@@ -1,0 +1,32 @@
+package zuoye2;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class TreeSetTest {
+	public static void main(String[] args) {
+		TreeSet ts=new TreeSet();
+		
+		ts.add(new Student(1, "WQ", '女', 23, 100));
+		ts.add(new Student(2, "WC", '男', 14, 59.9));
+		ts.add(new Student(3, "SJY", '女', 22, 99));
+		ts.add(new Student(4, "TWL", '女', 23, 100));
+		ts.add(new Student(5, "CWY", '女', 24, 88));
+		
+		double avg;
+		double n=0;
+		for (Iterator iterator = ts.iterator(); iterator.hasNext();) {
+			Student d = (Student) iterator.next();
+			System.out.println(d);
+			
+			n+=d.getsJava();//n=n+d.getsJava
+		}
+			avg=n/5;
+			
+			System.out.println("avg:"+avg);
+			System.out.println("最低成绩："+((Student) (ts.first())).getsJava());
+			System.out.println("最高成绩："+((Student) (ts.last())).getsJava());
+	}
+	
+
+}

@@ -1,10 +1,10 @@
 
 public class Share extends Thread{
-	int ticket=10;//共有十张票出售
-	int num = 0;//当前卖出的票数
+	static int ticket=4;//共有十张票出售
+	static int num = 0;//当前卖出的票数
 	
 	public void run(){
-		for(int i = 1;i<=10;i++){
+		for(int i = 1;i<=3;i++){
 			if(ticket > 0){
 				ticket--;
 				num++;
@@ -17,17 +17,20 @@ public class Share extends Thread{
 	
 	public static void main(String[] args) {
 		Share t=new Share();
-		Thread t1=new Thread(t);
-		Thread t2=new Thread(t);
-		Thread t3=new Thread(t);
+		Share t1=new Share();
+		Share t2=new Share();
+
+		//		Thread t1=new Thread(t);
+//		Thread t2=new Thread(t);
+//		Thread t3=new Thread(t);
 		
-		t1.setName("第一个售票窗口");
-		t2.setName("第二个售票窗口");
-		t3.setName("第三个售票窗口");
+		t.setName("第一个售票窗口");
+		t1.setName("第二个售票窗口");
+		t2.setName("第三个售票窗口");
 		
+		t.start();
 		t1.start();
 		t2.start();
-		t3.start();
 	
 	}
 

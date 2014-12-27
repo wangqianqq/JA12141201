@@ -5,7 +5,7 @@
  * 			
  * 			并行执行/同时
  * 多任务：
- * 对进程：
+ * 多进程：
  * 多线程：
  * 	操作系统给进程、线程分配非常小的时间片、由OS取调度、随机切换
  *
@@ -25,12 +25,13 @@ class A{
 
 public class Demo {
 	public static void main(String[] args) {
-		System.out.println(Thread.currentThread().getId()+Thread.currentThread().getName());
+		System.out.println(Thread.currentThread().getId()+" "+Thread.currentThread().getName());
 		A a=new A();
 		new A();
 		new A();
+		System.gc(); //  运行垃圾回收器
+
 		new A();
-		System.gc();
 		new A();
 		new A();
 		System.out.println("main函数");

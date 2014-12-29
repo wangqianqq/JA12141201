@@ -22,8 +22,9 @@ public class FileInputStreamDemo {
 		//Æ°
 		byte[] bbuf = new byte[32];//1k
 		int size=0;
-		size=fis.read(bbuf);
-		System.out.println(new String(bbuf, 4, size-4));
+//		size=fis.read(bbuf);
+//		System.out.println(new String(bbuf, 4, size-4));
+
 //		while((size=fis.read(bbuf))!=-1){
 //			//×Ö½Ú-->×Ö·û´®
 //			//System.out.println(new String(bbuf));

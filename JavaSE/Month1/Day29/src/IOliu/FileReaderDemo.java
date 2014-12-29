@@ -59,7 +59,9 @@ public class FileReaderDemo {
 		char[] chs = new char[1024];//1024及其整数倍
 		int len =0;
 		while((len=fr.read(chs))!=-1){
-			System.out.print(String.valueOf(chs,0,len));
+			//System.out.print(String.valueOf(chs,0,len));//返回 char 数组参数的特定子数组的字符串表示形式。
+			//返回 char 数组参数的特定子数组的字符串表示形式。与上面一行等同
+			System.out.print(new String(chs, 0, len));
 		}
 		 
 		 
